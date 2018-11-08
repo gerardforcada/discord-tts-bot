@@ -562,7 +562,6 @@ class MusicBot(discord.Client):
         print("  Default volume: %s%%" % int(self.config.default_volume * 100))
         print("  Skip threshold: %s votes or %s%%" % (
             self.config.skips_required, self._fixg(self.config.skip_ratio_required * 100)))
-        print("  Now Playing @mentions: " + ['Disabled', 'Enabled'][self.config.now_playing_mentions])
         print("  Auto-Summon: " + ['Disabled', 'Enabled'][self.config.auto_summon])
         print("  Auto-Pause: " + ['Disabled', 'Enabled'][self.config.auto_pause])
         print("  Delete Messages: " + ['Disabled', 'Enabled'][self.config.delete_messages])
